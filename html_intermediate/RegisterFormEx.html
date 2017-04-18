@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Register</title>
+</head>
+
+<body>
+  <h1>Register</h1>
+  <form>
+    <p>
+      <label for="firstName">First Name:</label>
+      <input id="firstName" type="text" name="firstName" placeholder="John" required="required" />
+      <label for="lastName">First Name:</label>
+      <input id="lastName" type="text" name="lastName" placeholder="Doe" required="required" />
+    </p>
+    <p>
+      <label for="male">Male</label>
+      <input id="male" type="radio" name="genderChoice" value="male" required="required">
+      <label for="female">Female</label>
+      <input id="female" type="radio" name="genderChoice" value="female" required="required">
+      <label for="other">Other</label>
+      <input id="other" type="radio" name="genderChoice" value="other" required="required">
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="your email" required="required" />
+    </p>
+    <p>
+      <label for="password">Password:</label>
+      <input id="password" name="password" type="password" placeholder="password" required="required" pattern="^.{5,10}$" title="5 to 10 chars"/>
+    </p>
+    <p>
+      <label for="bday">Birthday:</label>
+      <select class="" name="bday" required="required">
+        <option value="">Month</option><!-- default text ... value="" is not valid selectable option -->
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+      </select>
+      <select class="" name="bday" required="required">
+        <option value="">Day</option><!-- default text ... value="" is not valid selectable option -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <select class="" name="bday" required="required">
+        <option value="">Year</option><!-- default text ... value="" is not valid selectable option -->
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+      </select>
+    </p>
+    <p>
+      <label for="agb">I agree to the terms and conditions</label>
+      <input id="agb" type="checkbox" name="agb" value="accept">
+    </p>
+    <p>
+      <input type="submit" />
+    </p>
+  </form>
+</body>
+
+</html>
